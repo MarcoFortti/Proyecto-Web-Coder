@@ -174,7 +174,7 @@ form button:hover {
     background-repeat: no-repeat;  
     width: 100%;  
 }  
-/* Flexbox y box model */
+/* Estilos responsivos para la portada en pantallas muy pequeñas */
 @media (max-width: 480px) {  
     .portada {  
         height: 200px;  
@@ -213,7 +213,7 @@ form button:hover {
         height: auto;  
     }  
 }  
-
+/* Estilos responsivos para pantallas medianas */
 @media (min-width: 481px) and (max-width: 768px) {  
     body {  
         font-size: 16px;  
@@ -287,8 +287,3 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
 }
 
-<<<<<<< HEAD
-/* Se ve bien en todos los dispositvos */
-/* Para la proxima entrega voy a subir mas archivos multimedia, como por ejemplo una grafica de delitos informaticos */ 
-=======
->>>>>>> 99e92a3d02943745926bc5cda034c18c635153ec
