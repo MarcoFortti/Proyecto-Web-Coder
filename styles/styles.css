@@ -1,3 +1,4 @@
+/* Variables globales */
 :root {  
     --background-color: rgba(105, 93, 93, 0.5);  
     --background-img: url('../img/modern-cybersecurity-technology-background-with-padlock-vector.jpg');  
@@ -5,13 +6,14 @@
     --link-color: #ff0000;  
     --link-hover-color: rgb(255, 0, 0);  
 }  
+/* Márgenes y padding */
 
 * {  
     margin: 0;  
     padding: 0;  
     box-sizing: border-box;  
 }  
-
+/* Estilos para el cuerpo */
 body {  
     font-family: 'Poppins', sans-serif;  
     background-color: var(--background-color);  
@@ -29,7 +31,7 @@ body {
 h1, h2, h3, p, li, label {  
     color: var(--text-color);  
 }  
-
+/* Estilos para los contenedores */
 .container {  
     width: 80%;  
     max-width: 1200px;  
@@ -39,7 +41,7 @@ h1, h2, h3, p, li, label {
     border-radius: 10px;  
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);  
 }  
-
+/* Estilos para el menú de navegación */
 nav ul {  
     list-style-type: none;  
     display: flex;  
@@ -110,7 +112,7 @@ form button {
 form button:hover {  
     background: var(--link-hover-color);  
 }  
-
+/* Estilos responsivos para la portada en pantallas muy pequeñas */
 @media (max-width: 768px) {  
     .contact-form, .testimonial, .highlighted-testimonial {  
         width: 90%;  
@@ -150,7 +152,7 @@ form button:hover {
     bottom: 20px;  
     z-index: 1000;  
 }  
-
+/* Estilos para la imagen dentro del botón de whattsapp */
 .whatsapp-button img {  
     width: 60px;  
     height: 60px;  
@@ -159,7 +161,7 @@ form button:hover {
     padding: 10px;  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }  
-
+/* Estilos para la portada */
 .portada {  
     display: flex;  
     justify-content: center;  
@@ -172,7 +174,7 @@ form button:hover {
     background-repeat: no-repeat;  
     width: 100%;  
 }  
-
+/* Flexbox y box model */
 @media (max-width: 480px) {  
     .portada {  
         height: 200px;  
@@ -285,16 +287,3 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
 }
 
-h6 {
-    font-size: 20px;
-    background-color: #000000; 
-    color: white;              
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;  
-}
-
-h6:hover {
-    background-color: #ff0000; 
-    color: black;              
-}
