@@ -1,0 +1,22 @@
+@use 'variables' as v; // La ruta ahora es directa 'variables'
+
+.news {
+  a {
+    display: inline-block;
+    // Color ya afectado por el override general en _base.scss con !important
+    // color: v.$color-texto; // #ffffff
+
+    background-color: v.$color-enlace; // var(--link-color)
+    padding: 8px v.$espaciado-medio; // 8px 15px
+    border-radius: v.$radio-borde-pequeno; // 5px
+    text-decoration: none;
+    font-weight: bold;
+    transition: v.$transicion-transform, v.$transicion-fondo, v.$transicion-sombra;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: v.$color-enlace-hover; // var(--link-hover-color)
+      box-shadow: 0 4px 10px v.$color-sombra-enlace-hover; // rgba(0, 255, 0, 0.5)
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@use 'variables' as v; // La ruta ahora es directa 'variables'
+
+// Estilos para el video responsivo
+section.contact-call-to-action {
+  video {
+    display: block; // Comportamiento de bloque
+    max-width: 80%; // Limita el ancho máximo
+    height: auto; // Mantiene la proporción
+    margin: v.$espaciado-grande auto; // Centra horizontalmente y agrega margen vertical
+  }
+}

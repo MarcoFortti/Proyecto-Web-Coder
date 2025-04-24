@@ -1,0 +1,49 @@
+@use 'variables' as v; // La ruta ahora es directa 'variables'
+
+.contact-form {
+  background: v.$color-negro-transparente-70; // rgba(0, 0, 0, 0.7)
+  padding: v.$espaciado-grande; // 20px
+  border-radius: v.$radio-borde-grande; // 10px
+  box-shadow: 0px 4px 8px v.$color-sombra-negra-suave; // rgba(0, 0, 0, 0.3)
+  max-width: 600px;
+  margin: v.$espaciado-grande auto; // 20px auto
+  color: v.$color-texto;
+
+  // Ajustes responsivos para pantallas medianas/pequeñas (hasta 768px)
+  @media (max-width: v.$breakpoint-movil-medio) {
+    width: 90%; // Ajuste para pantallas medianas/pequeñas
+    padding: v.$espaciado-medio; // 15px
+  }
+
+  @media (max-width: v.$breakpoint-movil-pequeno) {
+     padding: v.$espaciado-medio; // 15px
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: v.$espaciado-medio; // 15px
+
+  input, select, textarea {
+    width: 100%;
+    padding: v.$espaciado-pequeno; // 10px
+    border: 1px solid v.$color-borde-claro; // #ccc
+    border-radius: v.$radio-borde-pequeno; // 5px
+    font-size: 16px;
+  }
+
+  button {
+    background: v.$color-enlace; // var(--link-color)
+    color: white;
+    padding: v.$espaciado-pequeno; // 10px
+    border: none;
+    border-radius: v.$radio-borde-pequeno; // 5px
+    cursor: pointer;
+    transition: v.$transicion-fondo; // background 0.3s
+
+    &:hover { // Anidamiento para el estado hover
+      background: v.$color-enlace-hover; // var(--link-hover-color)
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use 'variables' as v; // La ruta ahora es directa 'variables'
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Estilos del cuerpo
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: v.$color-background;
+  background-image: v.$imagen-background;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px; // Estilo base para pantallas grandes
+
+  @media (max-width: v.$breakpoint-movil-medio) {
+    font-size: 16px; // Ajuste para pantallas medianas/pequeñas
+  }
+
+  @media (max-width: v.$breakpoint-movil-pequeno) {
+    font-size: 14px; // Ajuste para pantallas muy pequeñas
+  }
+}
+
+// Estilos generales de texto (usando variables de color)
+h1, h2, h3, p, li, label {
+  color: v.$color-texto;
+}
+
+// Overrides de color generales (Nota: !important se mantiene como en el CSS original)
+body, h1, h2, h3, p, li, label, a, button {
+  color: white !important;
+}

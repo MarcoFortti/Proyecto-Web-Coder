@@ -1,0 +1,33 @@
+@use 'variables' as v; // La ruta ahora es directa 'variables'
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: v.$espaciado-grande; // 20px
+  padding: v.$espaciado-grande 0; // 20px 0
+
+  // Ajuste para pantallas medianas (481px a 768px)
+  @media (min-width: v.$breakpoint-movil-pequeno + 1) and (max-width: v.$breakpoint-movil-medio) {
+      flex-direction: column; // Apilar testimonios en este rango
+  }
+
+  // Ajuste para pantallas pequeñas (hasta 768px)
+  @media (max-width: v.$breakpoint-movil-medio) {
+      gap: v.$espaciado-pequeno; // 10px de espacio entre ellos
+  }
+}
+
+.testimonial {
+  background: v.$color-blanco-transparente-20; // rgba(255, 255, 255, 0.2)
+  padding: v.$espaciado-medio; // 15px
+  border-radius: v.$radio-borde-grande; // 10px
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0px 2px 4px v.$color-sombra-negra-ligera; // rgba(0, 0, 0, 0.2)
+
+  // Ajuste para pantallas medianas/pequeñas (hasta 768px)
+  @media (max-width: v.$breakpoint-movil-medio) {
+      width: 90%; // Ajuste el ancho para estos tamaños
+  }
+}

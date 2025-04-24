@@ -1,0 +1,28 @@
+@use 'variables' as v; // La ruta ahora es directa 'variables'
+
+.img2 {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+  // Ajuste para pantallas muy pequeñas (hasta 480px)
+  @media (max-width: v.$breakpoint-movil-pequeno) {
+    width: 100%;
+    height: auto;
+  }
+
+  // Ajuste para pantallas grandes (>= 769px)
+  @media (min-width: 769px) {
+    width: 400px;
+  }
+}
+
+.imagen-kali {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: v.$espaciado-grande auto; // 20px auto
+  border-radius: v.$radio-borde-medio; // 8px
+  box-shadow: 0 4px 8px v.$color-sombra-whatsapp; // rgba(0, 0, 0, 0.1)
+}
