@@ -1,4 +1,4 @@
-@use 'variables' as v; // La ruta ahora es directa 'variables'
+@use 'variables' as v; 
 
 // Reset básico
 * {
@@ -36,7 +36,7 @@ h1, h2, h3, p, li, label {
   color: v.$color-texto;
 }
 
-// Overrides de color generales (Nota: !important se mantiene como en el CSS original)
+// Overrides de color generales 
 body, h1, h2, h3, p, li, label, a, button {
   color: white !important;
 }

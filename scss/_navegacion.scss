@@ -3,42 +3,40 @@
 nav {
   ul {
     list-style-type: none;
-    display: flex; // Por defecto flex (row) para pantallas grandes y medianas (769px+)
+    display: flex; 
     justify-content: center;
-    padding: v.$espaciado-pequeno; // 10px
-    background: v.$color-negro-transparente-60; // rgba(0, 0, 0, 0.6)
-    border-radius: v.$radio-borde-medio; // 8px
+    padding: v.$espaciado-pequeno; 
+    background: v.$color-negro-transparente-60; 
+    border-radius: v.$radio-borde-medio; 
 
-    // Ajuste para pantallas muy pequeñas (hasta 480px): apila los ítems
+    
     @media (max-width: v.$breakpoint-movil-pequeno) {
       flex-direction: column;
     }
 
-    // Ajuste para pantallas medianas (481px a 768px): mantiene en fila
+    
     @media (min-width: v.$breakpoint-movil-pequeno + 1) and (max-width: v.$breakpoint-movil-medio) {
        flex-direction: row; // Aseguramos que esté en fila en este rango
     }
 
     li {
-      margin: 0 v.$espaciado-medio; // 0 15px por defecto (para >= 481px)
+      margin: 0 v.$espaciado-medio; 
 
       // Ajuste de margen para ítems apilados en pantallas muy pequeñas (hasta 480px)
       @media (max-width: v.$breakpoint-movil-pequeno) {
-        margin: v.$espaciado-pequeno 0; // 10px 0
+        margin: v.$espaciado-pequeno 0; 
       }
     }
 
     li a {
-      // El color se fuerza a 'white' en _base.scss con !important,
-      // pero mantenemos las transiciones y el estilo hover aquí.
       color: white !important; // Considerar revisar si se puede evitar con mejor estructura
       text-decoration: none;
       font-weight: bold;
-      transition: v.$transicion-color, text-decoration 0.2s; // color 0.3s, text-decoration 0.2s
+      transition: v.$transicion-color, text-decoration 0.2s; 
 
       &:hover { // Anidamiento para el estado hover
         text-decoration: underline;
-        color: v.$color-enlace-hover !important; // Considerar revisar si se puede evitar
+        color: v.$color-enlace-hover !important; 
       }
     }
   }

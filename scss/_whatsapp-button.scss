@@ -1,23 +1,23 @@
-@use 'variables' as v; // La ruta ahora es directa 'variables'
+@use 'variables' as v; 
 
 .whatsapp-button {
   position: fixed;
-  left: v.$espaciado-grande; // 20px
-  bottom: v.$espaciado-grande; // 20px
+  left: v.$espaciado-grande; 
+  bottom: v.$espaciado-grande; 
   z-index: 1000;
 
-   @media (min-width: 769px) { // Para pantallas grandes (>= 769px)
-     left: v.$espaciado-grande; // 20px
-     bottom: v.$espaciado-grande; // 20px
+   @media (min-width: 769px) { // Para pantallas grandes
+     left: v.$espaciado-grande; 
+     bottom: v.$espaciado-grande; 
    }
 
   img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: v.$color-whatsapp; // #25D366
-    padding: v.$espaciado-pequeno; // 10px
-    box-shadow: 0 4px 8px v.$color-sombra-whatsapp; // rgba(0, 0, 0, 0.1)
+    background-color: v.$color-whatsapp; 
+    padding: v.$espaciado-pequeno; 
+    box-shadow: 0 4px 8px v.$color-sombra-whatsapp; 
 
     // Ajuste para pantallas muy pequeñas (hasta 480px)
     @media (max-width: v.$breakpoint-movil-pequeno) {

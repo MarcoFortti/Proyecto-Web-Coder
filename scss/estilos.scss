@@ -1,16 +1,14 @@
-// Importación de variables y demás parciales.
-// La ruta es directa porque todos están en la misma carpeta 'scss/'
+
 
 @use 'variables';
 @use 'base';
 @use 'layout';
 @use 'navegacion';
 @use 'formulario';
-@use 'testimonios'; // Este es el archivo que daba error
+@use 'testimonios'; 
 @use 'whatsapp-button';
 @use 'portada';
 @use 'news';
 @use 'video';
 @use 'imagenes';
 
-// Si tuvieras utilidades o páginas, irían aquí con @use 'nombre-archivo';

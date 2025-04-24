@@ -1,49 +1,48 @@
-@use 'variables' as v; // La ruta ahora es directa 'variables'
-
+@use 'variables' as v; 
 .contact-form {
-  background: v.$color-negro-transparente-70; // rgba(0, 0, 0, 0.7)
-  padding: v.$espaciado-grande; // 20px
-  border-radius: v.$radio-borde-grande; // 10px
-  box-shadow: 0px 4px 8px v.$color-sombra-negra-suave; // rgba(0, 0, 0, 0.3)
+  background: v.$color-negro-transparente-70; 
+  padding: v.$espaciado-grande; 
+  border-radius: v.$radio-borde-grande; 
+  box-shadow: 0px 4px 8px v.$color-sombra-negra-suave; 
   max-width: 600px;
-  margin: v.$espaciado-grande auto; // 20px auto
+  margin: v.$espaciado-grande auto; 
   color: v.$color-texto;
 
-  // Ajustes responsivos para pantallas medianas/pequeñas (hasta 768px)
+  // Ajustes responsivos para pantallas medianas/pequeñas 
   @media (max-width: v.$breakpoint-movil-medio) {
     width: 90%; // Ajuste para pantallas medianas/pequeñas
-    padding: v.$espaciado-medio; // 15px
+    padding: v.$espaciado-medio; 
   }
 
   @media (max-width: v.$breakpoint-movil-pequeno) {
-     padding: v.$espaciado-medio; // 15px
+     padding: v.$espaciado-medio; 
   }
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: v.$espaciado-medio; // 15px
+  gap: v.$espaciado-medio; 
 
   input, select, textarea {
     width: 100%;
-    padding: v.$espaciado-pequeno; // 10px
-    border: 1px solid v.$color-borde-claro; // #ccc
-    border-radius: v.$radio-borde-pequeno; // 5px
+    padding: v.$espaciado-pequeno; 
+    border: 1px solid v.$color-borde-claro; 
+    border-radius: v.$radio-borde-pequeno; 
     font-size: 16px;
   }
 
   button {
-    background: v.$color-enlace; // var(--link-color)
+    background: v.$color-enlace;
     color: white;
-    padding: v.$espaciado-pequeno; // 10px
+    padding: v.$espaciado-pequeno; 
     border: none;
-    border-radius: v.$radio-borde-pequeno; // 5px
+    border-radius: v.$radio-borde-pequeno; 
     cursor: pointer;
-    transition: v.$transicion-fondo; // background 0.3s
+    transition: v.$transicion-fondo; 
 
     &:hover { // Anidamiento para el estado hover
-      background: v.$color-enlace-hover; // var(--link-hover-color)
+      background: v.$color-enlace-hover; 
     }
   }
 }
