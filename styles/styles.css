@@ -275,5 +275,193 @@ section.contact-call-to-action video {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.pricing-section {
+  padding: 40px 0;
+}
 
-/*# sourceMappingURL=styles.css.map */
+.pricing-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #ffffff !important;
+}
+@media (max-width: 768px) {
+  .pricing-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .pricing-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+}
+
+.pricing-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 350px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.pricing-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ffffff !important;
+}
+
+.pricing-card .price {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff0000 !important;
+}
+
+.pricing-card .price span {
+  font-size: 0.4em;
+  font-weight: normal;
+  color: #ffffff !important;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  text-align: left;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #ffffff !important;
+}
+
+.pricing-card .btn-contratar {
+  display: inline-block;
+  background: #ff0000;
+  color: white !important;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: auto;
+}
+
+.pricing-card .btn-contratar:hover {
+  background: rgb(200, 0, 0);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .pricing-cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pricing-card {
+    width: 90%;
+    max-width: 400px;
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+   .pricing-card {
+     width: 95%;
+     padding: 20px 10px;
+   }
+
+   .pricing-card h3 {
+     font-size: 1.5em;
+   }
+
+   .pricing-card .price {
+     font-size: 2.5em;
+   }
+
+   .pricing-card .btn-contratar {
+     padding: 10px 20px;
+   }
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #343a40;
+  color: white;
+}
+
+.logo-container {
+  margin-right: 20px;
+}
+
+.logo-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* --- VALORES DE ALTURA MÁXIMA AUMENTADOS --- */
+  max-height: 80px; /* Aumentado para pantallas grandes (ajusta si quieres más) */
+  /* ------------------------------------------ */
+}
+
+.site-header .navbar {
+  background-color: transparent !important;
+  padding: 0;
+}
+
+@media (max-width: 991.98px) {
+  .site-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .logo-container {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .logo-container img {
+      /* --- VALOR DE ALTURA MÁXIMA AUMENTADO PARA PANTALLAS PEQUEÑAS --- */
+       max-height: 60px; /* Aumentado para pantallas pequeñas (ajusta si quieres más) */
+      /* -------------------------------------------------------------- */
+  }
+
+  .site-header .navbar {
+      width: 100%;
+  }
+
+   .site-header .navbar .container-fluid {
+      padding: 0;
+   }
+}
