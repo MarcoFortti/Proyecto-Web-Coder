@@ -465,3 +465,45 @@ section.contact-call-to-action video {
       padding: 0;
    }
 }
+.imagen-chica-responsive {
+  max-width: 250px; /* Reducido para hacer la imagen más chica */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.social-icon-img {
+  max-width: 120px; /* Ajusta este valor */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.advertenciaimage {
+  max-width: 172px;   
+  max-height: 172px; 
+  width: 100%;        
+  height: auto;       
+  display: block;     
+  margin: 0 auto;     
+}
+.juanperez {
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.nuestramision {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .nuestramision {
+    max-width: 250px;
+  }
+}
