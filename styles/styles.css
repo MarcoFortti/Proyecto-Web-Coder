@@ -507,3 +507,12 @@ section.contact-call-to-action video {
     max-width: 250px;
   }
 }
+.coderypedidosya {
+  background-image: url('../img/coderpedidosya.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 4 / 1;
+  max-width: 50%;
+  height: auto;
+}
